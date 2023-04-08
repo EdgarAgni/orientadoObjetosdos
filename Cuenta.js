@@ -8,7 +8,16 @@ export class Cuenta {
         this.#cliente = cliente;
         this.#saldo = saldo;
     }
-    
+
+    set cliente(valor) {
+        if (valor instanceof Cliente)
+            this.#cliente = valor;
+    }
+
+    get cliente() {
+        return this.#cliente;
+    }
+
     depositoEnCuenta(valor) {
         if (valor > 0)
             this.#saldo += valor;
@@ -31,4 +40,9 @@ export class Cuenta {
         valor = 200;
         valor = valor*1000;
     }
+
+    prueba(){
+        console.log('Metodo padre')
+    }
+
 }
