@@ -6,8 +6,7 @@ export class CuentaCorriente extends Cuenta { //estensión de la clase cuenta.js
         super(cliente,numero,agencia,0); // adicional del constructor d ela clase cuenta
         CuentaCorriente.cantidadCuentas++;
     }
-
-    prueba(){
-        console.log("Metodo Hijo")
+    retirarDeCuenta(valor, comision) {
+            super.retirarDeCuenta(valor, 5);
     }
 }
