@@ -7,7 +7,7 @@ export class CuentaAhorro extends Cuenta { //estensión de la clase cuenta
     }
 
     retirarDeCuenta(valor, comision) {
-            super.retirarDeCuenta(valor, 1); // con super estamos llamando la operación original para no repetir tanto el codigo y entrar en posibles errores por valores ocultos o privados
+            super._retirarDeCuenta(valor, 1); // con super estamos llamando la operación original para no repetir tanto el codigo y entrar en posibles errores por valores ocultos o privados
     }
     
 }

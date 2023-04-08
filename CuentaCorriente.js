@@ -7,6 +7,6 @@ export class CuentaCorriente extends Cuenta { //estensión de la clase cuenta.js
         CuentaCorriente.cantidadCuentas++;
     }
     retirarDeCuenta(valor, comision) {
-            super.retirarDeCuenta(valor, 5);
+            super._retirarDeCuenta(valor, 5);
     }
 }
